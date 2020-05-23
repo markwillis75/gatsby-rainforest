@@ -8,9 +8,11 @@
   Gatsby's default starter
 </h1>
 
+---
 Basic static website generated using Gatsby to show-case my daughters school (P6)
 Amazon Rainforest Diary project
 
+---
 ## Quick Start
 
 1. **Prequisites**
@@ -36,11 +38,12 @@ Amazon Rainforest Diary project
    If the following error is encountered
    >    Error: pngquant failed to build, make sure that libpng-dev is installed
 
-   Execute the following command and try npm install again.  If that fails, see
-   the following link https://github.com/imagemin/imagemin-pngquant/issues/46#issuecomment-515808859
+   Execute the following command and try npm install again.  
    ```shell
    npm install -g windows-build-tools
    ```
+   If that fails, see
+   the following link https://github.com/imagemin/imagemin-pngquant/issues/46#issuecomment-515808859
 
    **2.3** Start the development environment
    ```shell
@@ -50,18 +53,24 @@ Amazon Rainforest Diary project
 
 3. **Publish**
 
-   **2.1 Prequisites**
+   **3.1 Prequisites**
 
-   **2.1.1** Install the AWS CLI from https://aws.amazon.com/cli/
+   **3.1.1** Install the AWS CLI from https://aws.amazon.com/cli/
 
-   **2.1.2** Configure AWS CLI
+   **3.1.2** Configure AWS CLI
    ```shell
    aws configure
    ```
 
+   **3.2** Deploy
+
    ```
-   npm install && npm deploy
+   npm run build && npm run deploy
    ```
+
+   **3.3** View site at http://mark-willis.co.uk
+
+---
 
 ## 🚀 Gatsby Quick start
 
