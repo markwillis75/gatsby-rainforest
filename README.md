@@ -8,11 +8,62 @@
   Gatsby's default starter
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Basic static website generated using Gatsby to show-case my daughters school (P6)
+Amazon Rainforest Diary project
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## Quick Start
 
-## 🚀 Quick start
+1. **Prequisites**
+
+   **1.1**
+    Download and install nodejs: [https://nodejs.org/en/](https://nodejs.org/en/)
+
+   **1.2** Install gatsbyjs
+   ```
+   npm install -g gatsby-cli
+   ```
+
+2. **Development**
+
+   **2.1** Change to working directory
+   ```shell
+   cd gatsby-rainforest
+   ```
+   **2.2** Install project dependencies
+   ```shell
+   npm install
+   ```
+   If the following error is encountered
+   >    Error: pngquant failed to build, make sure that libpng-dev is installed
+
+   Execute the following command and try npm install again.  If that fails, see
+   the following link https://github.com/imagemin/imagemin-pngquant/issues/46#issuecomment-515808859
+   ```shell
+   npm install -g windows-build-tools
+   ```
+
+   **2.3** Start the development environment
+   ```shell
+   gatsby develop
+   ```
+   **2.4** View site locally: http://localhost:8000
+
+3. **Publish**
+
+   **2.1 Prequisites**
+
+   **2.1.1** Install the AWS CLI from https://aws.amazon.com/cli/
+
+   **2.1.2** Configure AWS CLI
+   ```shell
+   aws configure
+   ```
+
+   ```
+   npm install && npm deploy
+   ```
+
+## 🚀 Gatsby Quick start
 
 1.  **Create a Gatsby site.**
 
@@ -40,7 +91,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-## 🧐 What's inside?
+## What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
